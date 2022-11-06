@@ -8,7 +8,7 @@ public class player : MonoBehaviour
     public Rigidbody2D playerRigidbody2D;
     Vector2 move;
     public float speed = 150;
-
+    public float multiplier = 1;
 
     void Awake()
     {
@@ -23,7 +23,7 @@ public class player : MonoBehaviour
 
     void FixedUpdate()
     {
-        playerRigidbody2D.velocity = move * speed * Time.deltaTime;
+        playerRigidbody2D.velocity = move * speed * multiplier * Time.deltaTime;
     }
 
     // Update is called once per frame
@@ -38,25 +38,25 @@ public class player : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift))
         {
-            speed = 300;
+            multiplier = 1.5f;
             animator.SetBool("correrIzquierda", true);
             animator.SetBool("caminarIzquierda", false);
         }
         if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift))
         {
-            speed = 300;
+            multiplier = 1.5f;
             animator.SetBool("correrDerecha", true);
             animator.SetBool("caminarDerecha", false);
         }
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift))
         {
-            speed = 300;
+            multiplier = 1.5f;
             animator.SetBool("correrArriba", true);
             animator.SetBool("caminarArriba", false);
         }
         if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.LeftShift))
         {
-            speed = 300;
+            multiplier = 1.5f;
             animator.SetBool("correrAbajo", true);
             animator.SetBool("caminarAbajo", false);
         }
@@ -82,7 +82,7 @@ public class player : MonoBehaviour
             animator.SetBool("correrArriba", false);
             animator.SetBool("correrIzquierda", false);
             animator.SetBool("correrDerecha", false);
-            speed = 150;
+            multiplier = 1;
         }
     }
 
