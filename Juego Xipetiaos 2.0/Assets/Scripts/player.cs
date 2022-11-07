@@ -14,6 +14,8 @@ public class player : MonoBehaviour
 
     public HealthBar healthBar;
 
+    public GameObject sonidoPasos;
+
     void Awake()
     {
         animator = GetComponent<Animator>();
@@ -108,34 +110,42 @@ public class player : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             animator.SetBool("caminarIzquierda", true);
+            sonidoPasos.gameObject.SetActive(true);
         }
         if (Input.GetKey(KeyCode.D))
         {
             animator.SetBool("caminarDerecha", true);
+            sonidoPasos.gameObject.SetActive(true);
         }
         if (Input.GetKey(KeyCode.W))
         {
             animator.SetBool("caminarArriba", true);
+            sonidoPasos.gameObject.SetActive(true);
         }
         if (Input.GetKey(KeyCode.S))
         {
             animator.SetBool("caminarAbajo", true);
+            sonidoPasos.gameObject.SetActive(true);
         }
         if (Input.GetKeyUp(KeyCode.W))
         {
             animator.SetBool("caminarArriba", false);
+            sonidoPasos.gameObject.SetActive(false);
         }
         if (Input.GetKeyUp(KeyCode.S))
         {
             animator.SetBool("caminarAbajo", false);
+            sonidoPasos.gameObject.SetActive(false);
         }
         if (Input.GetKeyUp(KeyCode.A))
         {
             animator.SetBool("caminarIzquierda", false);
+            sonidoPasos.gameObject.SetActive(false);
         }
         if (Input.GetKeyUp(KeyCode.D))
         {
             animator.SetBool("caminarDerecha", false);
+            sonidoPasos.gameObject.SetActive(false);
         }
     }
 }
