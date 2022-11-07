@@ -9,6 +9,10 @@ public class player : MonoBehaviour
     Vector2 move;
     public float speed = 150;
     public float multiplier = 1;
+    public int maxHealth = 100;
+    public int currentHealth;
+
+    public HealthBar healthBar;
 
     void Awake()
     {
@@ -19,6 +23,8 @@ public class player : MonoBehaviour
     void Start()
     {
         playerRigidbody2D = GetComponent<Rigidbody2D>();
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     void FixedUpdate()
@@ -29,9 +35,20 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            TakeDamage(25);
+        }
         move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         CaminarAnimacion();
         Correr();
+    }
+
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+
+        healthBar.SetHealth(currentHealth);
     }
 
     public void Correr()
