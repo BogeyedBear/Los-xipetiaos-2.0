@@ -8,6 +8,8 @@ public class Asesino : MonoBehaviour
 
     public AIPath aiPath;
     private Animator animator;
+    public GameObject died;
+    public GameObject player;
 
     void Awake()
     {
@@ -18,7 +20,9 @@ public class Asesino : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Destroy(collision.gameObject);
+            //Destroy(collision.gameObject);
+            died.gameObject.SetActive(true);
+            player.gameObject.SetActive(false);
             Debug.Log("¡¡¡YOU DIED!!!");
         }
     }
