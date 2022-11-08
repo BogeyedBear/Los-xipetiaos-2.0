@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Pathfinding;
 
 public class Asesino : MonoBehaviour
@@ -10,6 +11,8 @@ public class Asesino : MonoBehaviour
     private Animator animator;
     public GameObject died;
     public GameObject player;
+    public GameObject Reset;
+    public GameObject Negro;
 
     void Awake()
     {
@@ -21,6 +24,8 @@ public class Asesino : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             //Destroy(collision.gameObject);
+            Reset.gameObject.SetActive(true);
+            Negro.gameObject.SetActive(true);
             died.gameObject.SetActive(true);
             player.gameObject.SetActive(false);
             Debug.Log("¡¡¡YOU DIED!!!");
