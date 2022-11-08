@@ -44,6 +44,7 @@ public class QuitaVida : MonoBehaviour
         if (hits == 4f)
         {
             //Destroy(collision.gameObject);
+            player.gameObject.SetActive(false);
             Reset.gameObject.SetActive(true);
             Negro.gameObject.SetActive(true);
             died.gameObject.SetActive(true);

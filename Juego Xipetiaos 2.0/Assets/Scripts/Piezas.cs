@@ -18,8 +18,8 @@ public class Piezas : MonoBehaviour
         if (collision.gameObject.CompareTag("Pieza"))
         {
             Destroy(collision.gameObject);
-            Debug.Log("!!!Has encontrado una pieza¡¡¡(1/5)");
-            parts = +1f;
+            parts = parts + 1f;
+            Debug.Log("!!!Has encontrado una pieza¡¡¡(" + parts + "/5)");
         }
     }
 

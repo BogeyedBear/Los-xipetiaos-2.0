@@ -1882,10 +1882,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1959266823}
     m_Modifications:
+    - target: {fileID: 4815352979019440784, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4815352979643111655, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1653491114}
+    - target: {fileID: 4815352980576632568, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4815352980995491412, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
       propertyPath: m_Name
       value: OptionPanel
