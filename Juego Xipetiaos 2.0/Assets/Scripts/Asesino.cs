@@ -9,17 +9,18 @@ public class Asesino : MonoBehaviour
 
     public AIPath aiPath;
     private Animator animator;
-    public GameObject died;
-    public GameObject player;
-    public GameObject Reset;
-    public GameObject Negro;
+    //public GameObject died;
+    //public GameObject player;
+    //public GameObject Reset;
+    //public GameObject Negro;
+    //private float hits = 0f;
 
     void Awake()
     {
         animator = GetComponent<Animator>();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /**private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -27,14 +28,30 @@ public class Asesino : MonoBehaviour
             Reset.gameObject.SetActive(true);
             Negro.gameObject.SetActive(true);
             died.gameObject.SetActive(true);
-            player.gameObject.SetActive(false);
+            Debug.Log("¡¡¡YOU DIED!!!");
+            hits = +1f;
+        }
+        if (hits == 4f)
+        {
+            //Destroy(collision.gameObject);
+            Reset.gameObject.SetActive(true);
+            Negro.gameObject.SetActive(true);
+            died.gameObject.SetActive(true);
             Debug.Log("¡¡¡YOU DIED!!!");
         }
-    }
+    }**/
 
     // Update is called once per frame
     void Update()
     {
+        /**if (hits == 4f)
+        {
+            //Destroy(collision.gameObject);
+            Reset.gameObject.SetActive(true);
+            Negro.gameObject.SetActive(true);
+            died.gameObject.SetActive(true);
+            Debug.Log("¡¡¡YOU DIED!!!");
+        }**/
         if (aiPath.desiredVelocity.x >= 0.01f)
         {
             //transform.localScale = new Vector3(1f, 1f, 1f);

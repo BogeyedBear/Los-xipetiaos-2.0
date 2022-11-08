@@ -5,7 +5,7 @@ using UnityEngine;
 public class Piezas : MonoBehaviour
 {
 
-    public float piezas = 0f;
+    public float parts = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class Piezas : MonoBehaviour
         {
             Destroy(collision.gameObject);
             Debug.Log("!!!Has encontrado una pieza¡¡¡(1/5)");
-            piezas = +1f;
+            parts = +1f;
         }
     }
 

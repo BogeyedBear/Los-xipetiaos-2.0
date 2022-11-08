@@ -8,7 +8,7 @@ public class player : MonoBehaviour
     public Rigidbody2D playerRigidbody2D;
     Vector2 move;
     public float speed = 150;
-    public float multiplier = 1;
+    private float multiplier = 1;
     public int maxHealth = 100;
     public int currentHealth;
 
@@ -34,16 +34,20 @@ public class player : MonoBehaviour
         playerRigidbody2D.velocity = move * speed * multiplier * Time.deltaTime;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (collision.gameObject.CompareTag("Asesino"))
         {
             TakeDamage(25);
         }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        CaminarAnimacion();
-        Correr();
+        WalkAnimation();
+        Run();
     }
 
     void TakeDamage(int damage)
@@ -53,7 +57,7 @@ public class player : MonoBehaviour
         healthBar.SetHealth(currentHealth);
     }
 
-    public void Correr()
+    public void Run()
     {
         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift))
         {
@@ -105,7 +109,7 @@ public class player : MonoBehaviour
         }
     }
 
-    public void CaminarAnimacion()
+    public void WalkAnimation()
     {
         if (Input.GetKey(KeyCode.A))
         {
