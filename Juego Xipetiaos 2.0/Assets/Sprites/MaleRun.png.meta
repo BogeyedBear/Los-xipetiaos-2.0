@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6521744195cfbe34c8cf2b3a88c3c003
+guid: f99da3d19ef05ca49be36f652d344bb7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: unknown (1)_0
+      name: MaleRun_0
       rect:
         serializedVersion: 2
-        x: 9
+        x: 0
         y: 0
-        width: 20
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b19cbe499f037045b3db6febdf71955
-      internalID: 1726408763
+      spriteID: f222eb655becf9c4bb707047623c3485
+      internalID: -1821191673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unknown (1)_1
+      name: MaleRun_1
       rect:
         serializedVersion: 2
-        x: 41
+        x: 32
         y: 0
-        width: 20
-        height: 28
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e845249878b3f1a408f51cfa140be98f
-      internalID: -351343080
+      spriteID: bd4572d467cceca43b57e298baf1530e
+      internalID: -1205034491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unknown (1)_2
+      name: MaleRun_2
       rect:
         serializedVersion: 2
-        x: 73
+        x: 64
         y: 0
-        width: 20
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 268ca6983ca93b049868a732ca261b37
-      internalID: -1636023728
+      spriteID: 1c82d135488bc6f4d85f40432d8795cd
+      internalID: 803083530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unknown (1)_3
+      name: MaleRun_3
       rect:
         serializedVersion: 2
-        x: 105
+        x: 96
         y: 0
-        width: 20
-        height: 28
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e700a167b2b8384eb9a838dc5aaa98b
-      internalID: -666232267
+      spriteID: 77e9d8355be70af45aa5acfa4fc7cf83
+      internalID: -1737260589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unknown (1)_4
+      name: MaleRun_4
       rect:
         serializedVersion: 2
-        x: 131
+        x: 128
         y: 0
-        width: 20
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc1691229dcacb74aae7466cb0361de2
-      internalID: 1256061231
+      spriteID: 9c577a0835f9df743aea457f554096eb
+      internalID: -1454987908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unknown (1)_5
+      name: MaleRun_5
       rect:
         serializedVersion: 2
-        x: 163
+        x: 160
         y: 0
-        width: 20
-        height: 28
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,20 +223,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bc5374baa9ad6d429d8cad4ec3315fb
-      internalID: 1411247822
+      spriteID: 62d512d0057d3134e87986b3cd66763f
+      internalID: -1947229740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unknown (1)_6
+      name: MaleRun_6
       rect:
         serializedVersion: 2
-        x: 195
+        x: 192
         y: 0
-        width: 20
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfb1628d3e88a2d47b5b057977dae87b
-      internalID: -842127064
+      spriteID: 90f0538f2fadae347b9f8b998147defa
+      internalID: 1105849444
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unknown (1)_7
+      name: MaleRun_7
       rect:
         serializedVersion: 2
-        x: 227
+        x: 224
         y: 0
-        width: 20
-        height: 28
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,20 +265,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccc774ffff2dee8499dd4a1b4be0d10d
-      internalID: 1855342194
+      spriteID: ef1c38f1143167641bffd61b6f1a8676
+      internalID: 1741561652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unknown (1)_8
+      name: MaleRun_8
       rect:
         serializedVersion: 2
-        x: 263
+        x: 256
         y: 0
-        width: 18
-        height: 28
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,20 +286,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9aa17fa556457140a569eea15726889
-      internalID: -1131552658
+      spriteID: 97dc52ac87dbdfa4bb03c598d3009628
+      internalID: 348238375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unknown (1)_9
+      name: MaleRun_9
       rect:
         serializedVersion: 2
-        x: 295
+        x: 288
         y: 0
-        width: 18
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,20 +307,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5290c6b75f08b454a8940e6c74fe1c60
-      internalID: -759713551
+      spriteID: 963a2c1c6814b254bb1d574aee781ac0
+      internalID: -941846414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unknown (1)_10
+      name: MaleRun_10
       rect:
         serializedVersion: 2
-        x: 327
+        x: 320
         y: 0
-        width: 18
-        height: 28
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,20 +328,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 679c8d52dd757854b99f92442c5006be
-      internalID: 500191726
+      spriteID: 47aa77077f002744aabc16ffc60d3a52
+      internalID: -1170970667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unknown (1)_11
+      name: MaleRun_11
       rect:
         serializedVersion: 2
-        x: 359
+        x: 352
         y: 0
-        width: 18
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,20 +349,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dea7ab857f02376489605b41aeb9fa5c
-      internalID: -919536628
+      spriteID: 7b257b20bfa895646aad46f166fa1d8b
+      internalID: -1648371272
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unknown (1)_12
+      name: MaleRun_12
       rect:
         serializedVersion: 2
-        x: 391
+        x: 384
         y: 0
-        width: 18
-        height: 30
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,20 +370,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7faa23254e4c7f241bb6c6aa13857f04
-      internalID: -1267471397
+      spriteID: 074abb9c04779da4593dfa87a47a2013
+      internalID: 1508117419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unknown (1)_13
+      name: MaleRun_13
       rect:
         serializedVersion: 2
-        x: 423
+        x: 416
         y: 0
-        width: 18
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,20 +391,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15bfc5bfaf9485d4e8d152f4e4bf1b44
-      internalID: -1257308033
+      spriteID: 91846b5a65f2cfd4a9364567fcf57510
+      internalID: 1371217862
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unknown (1)_14
+      name: MaleRun_14
       rect:
         serializedVersion: 2
-        x: 455
+        x: 448
         y: 0
-        width: 18
-        height: 30
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -412,20 +412,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e2d89745ab917840963779d46c19d91
-      internalID: 1742728813
+      spriteID: fff055e2dd7158848986a6f6d48eb32c
+      internalID: 608486075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unknown (1)_15
+      name: MaleRun_15
       rect:
         serializedVersion: 2
-        x: 487
+        x: 480
         y: 0
-        width: 18
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,8 +433,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b99f0a8b1bd006c428922013f8bceaec
-      internalID: 841264651
+      spriteID: 20261d40ac0b3b5418c6f453466a329f
+      internalID: -259845319
       vertices: []
       indices: 
       edges: []
@@ -450,22 +450,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      unknown (1)_2: -1636023728
-      unknown (1)_8: -1131552658
-      unknown (1)_0: 1726408763
-      unknown (1)_11: -919536628
-      unknown (1)_9: -759713551
-      unknown (1)_13: -1257308033
-      unknown (1)_3: -666232267
-      unknown (1)_4: 1256061231
-      unknown (1)_12: -1267471397
-      unknown (1)_10: 500191726
-      unknown (1)_15: 841264651
-      unknown (1)_1: -351343080
-      unknown (1)_14: 1742728813
-      unknown (1)_6: -842127064
-      unknown (1)_7: 1855342194
-      unknown (1)_5: 1411247822
+      MaleRun_10: -1170970667
+      MaleRun_13: 1371217862
+      MaleRun_12: 1508117419
+      MaleRun_4: -1454987908
+      MaleRun_3: -1737260589
+      MaleRun_11: -1648371272
+      MaleRun_7: 1741561652
+      MaleRun_2: 803083530
+      MaleRun_1: -1205034491
+      MaleRun_9: -941846414
+      MaleRun_5: -1947229740
+      MaleRun_14: 608486075
+      MaleRun_6: 1105849444
+      MaleRun_8: 348238375
+      MaleRun_0: -1821191673
+      MaleRun_15: -259845319
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
