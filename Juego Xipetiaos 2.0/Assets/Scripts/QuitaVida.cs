@@ -9,6 +9,7 @@ public class QuitaVida : MonoBehaviour
     public GameObject player;
     public GameObject Reset;
     public GameObject Negro;
+    public GameObject Backmenu;
     public float hits = 0f;
 
     // Start is called before the first frame update
@@ -48,6 +49,7 @@ public class QuitaVida : MonoBehaviour
             Reset.gameObject.SetActive(true);
             Negro.gameObject.SetActive(true);
             died.gameObject.SetActive(true);
+            Backmenu.gameObject.SetActive(true);
             Debug.Log("¡¡¡YOU DIED!!!");
         }
     }

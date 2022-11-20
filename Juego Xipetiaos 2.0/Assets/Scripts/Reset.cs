@@ -11,6 +11,12 @@ public class Reset : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
+    public void QuitGame()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+
     // Update is called once per frame
     void Update()
     {
