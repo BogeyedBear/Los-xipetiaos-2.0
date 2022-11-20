@@ -21,14 +21,7 @@ public class player : MonoBehaviour
     void Awake()
     {
         animator = GetComponent<Animator>();
-        if (PlayerPrefs.GetInt("Skin", 0) == 0)
-        {
-            this.animator.runtimeAnimatorController = animators[0];
-        }
-        else
-        {
-            this.animator.runtimeAnimatorController = animators[1];
-        }
+        this.animator.runtimeAnimatorController = animators[PlayerPrefs.GetInt("Skin", 0)];
     }
 
     // Start is called before the first frame update
