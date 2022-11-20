@@ -16,9 +16,19 @@ public class player : MonoBehaviour
 
     public GameObject sonidoPasos;
 
+    public List<RuntimeAnimatorController> animators;
+
     void Awake()
     {
         animator = GetComponent<Animator>();
+        if (PlayerPrefs.GetInt("Skin", 0) == 0)
+        {
+            this.animator.runtimeAnimatorController = animators[0];
+        }
+        else
+        {
+            this.animator.runtimeAnimatorController = animators[1];
+        }
     }
 
     // Start is called before the first frame update
