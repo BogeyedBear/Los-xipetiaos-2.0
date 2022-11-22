@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3822129162a495941ad34b246fbd5a11
+guid: 0ea32927987c35c478f043785120a151
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,43 +104,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tele_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 21
-        width: 64
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2926dd0ef4d2fd345b0fa4dc52f963f4
-      internalID: 935397857
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tele_1
+      name: piso_1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 21
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3576580b59d43404c81ffe4a9f2d21c9
-      internalID: -1398380473
+      spriteID: 5b89e145fcecf494f9543a4859d9b583
+      internalID: 1381532592
       vertices: []
       indices: 
       edges: []
@@ -156,8 +135,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tele_0: 935397857
-      tele_1: -1398380473
+      piso_1_0: 1381532592
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
