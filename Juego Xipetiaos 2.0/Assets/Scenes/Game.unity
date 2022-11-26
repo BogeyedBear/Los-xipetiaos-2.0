@@ -229,7 +229,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2037301619}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &27403726
 SpriteRenderer:
@@ -271,7 +271,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.78039217}
   m_FlipX: 0
@@ -518,7 +518,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2037301619}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &246939444
 GameObject:
@@ -530,7 +530,7 @@ GameObject:
   m_Component:
   - component: {fileID: 246939445}
   - component: {fileID: 246939446}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: tele0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -750,7 +750,7 @@ GameObject:
   - component: {fileID: 300827451}
   - component: {fileID: 300827450}
   - component: {fileID: 300827452}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Paredes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3121,7 +3121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 338492898}
   - component: {fileID: 338492899}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: parte1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3335,7 +3335,7 @@ GameObject:
   - component: {fileID: 604967977}
   - component: {fileID: 604967976}
   - component: {fileID: 604967975}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: LavaMano
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3721,7 +3721,7 @@ GameObject:
   - component: {fileID: 781474137}
   - component: {fileID: 781474134}
   - component: {fileID: 781474138}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: sofa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3881,7 +3881,7 @@ GameObject:
   m_Component:
   - component: {fileID: 836577610}
   - component: {fileID: 836577611}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: parte0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4576,7 +4576,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2037301619}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &893827450
 MonoBehaviour:
@@ -17090,7 +17090,7 @@ GameObject:
   - component: {fileID: 1491244324}
   - component: {fileID: 1491244322}
   - component: {fileID: 1491244327}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: tele
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17291,7 +17291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1511354391}
   - component: {fileID: 1511354392}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: tele1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31152,9 +31152,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 221104659}
   - {fileID: 893827449}
   - {fileID: 27403725}
-  - {fileID: 221104659}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -31241,7 +31241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACon+sqCVYacgIAACMFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMzk2Gr2DcW0oI6SEJU9rJxRchrbEGWfJIMh/J8N+rlWXs0hPi7dvdt08rfxGhbAXMabMygr9qDuT7gDzyA1UMOPk26AgvcKI7rTbiE1reh+CuQBINnF/UCe3xCaZZXYIzgj2qnUTy0IO1Erk25ZLvYKGtsx7OqbTgQ0Y7zFYe+hqQk/+5SzHl7E/jBE+f/pQOBxd/ZKAcmI46mkbmPPIaWq2YpGUFHDV37Mns/mGSpmkyilkPk/tkFjKUHyySh/djjDMtpbBRGHHnKgy+qQowgJNzQf2cQQyKKEDsCoea+7nveW7BRRMMPT8J4+1qipIfuvGwpHbfiDxQWWOb2TSIamq+/he+G4VwbnT50rYdDbGFKwTb/6JnRq3redyHnzrdo2DVkco93Ur4KEC96ZXRteI+6EyNqbWF8VP39zrZogC27/BG6g1YV5337ZW2F4ozXMLwp4UU5TYYP22AjdTB7bAHYPzV/PSCw5bYWMKjqOKPhd9011+nGHgWxjofilMqlLfVtUEqWQbPcJraLbRREOAougJFpTuvfRl3e4M3sV7bm8gzxYcTm8dY+x5uUgLc8YfDm9BaH6+XZQt9fAVbvNdOCgWdaAy8eZ8WWqlmwfqetGmb2uSU9dJ2teD/rhaBGRvNGefbhPIZG2/vaDJOE0gnkyTPt/PpnITdE8rPSeW6ERrt8bemuuLK7xlWxO/LYGVoFZadG3pcic9S9ywXKtcbZgDUe1PhKhyMb+KfJV9y4Q3agHNChfsmXxmRmu2BZ9dCWZh0eXKGZl2VjFTioB0iGVmED0hGEL7u8trAQcARm7fFLuTyF1BLAwQUAAAICAAAqJ/ryWjjBm0AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNdRUEovSizIKAaKGII4pZkpIHa0UqpZsqFFckpKknliilmyUZJuormRpXmqpbGxeVpakoWJhVIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAqJ/rKglWGnICAAAjBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAqJ/ryWjjBm0AAAB4AAAACQAkAAAAAAAAAAAAAAC/AgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAHcDAAAAAA==
+    dataString: UEsDBBQAAAgIAACon+t87yArcwIAACQFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMzk2Gr2DcW0oI6SEJU9rJxRchrbEGWfJIMh/J8N+rlWXs0hPi7dvdt08rfxGhbAXMabMygr9qDuT7gDzyA1UMOPk26AgvcKI7rTbiE1reh+CuQBINnF/UCe3xCaZZXYIzgj2qnUTy0IO1Erk25ZLvYKGtsx7OqbTgQ0Y7zFYe+hqQk/+5SzHl7E/jBE+f/pQOBxd/ZKAcmI46mkbmPPIaWq2YpGUFHDV37Mns/mGSpmkyilkPk/tkFjKUHyySh/djjDMtpbBRGHHnKgy+qQowgJNzQf2cQQyKKEDsCoea+7nveW7BRRMMPT8J4+1qipIfuvGwpHbfiDxQWWOb6XQeVDVFX/+L341CODe6fGn7jobYwxWC7X/RM6PW9Uzuw0+d8FHw6kjlnm4lfBSg3vTK6FpxH3SmxtTawvip+3sdbVEA23d4I/UGrKvO/PZO2xvFGS5h+tNCinIbnJ82wEbqYHdYBDD+bn56wWFNbCzhUVTxx8JvuuvvUww8C2OdD8UpFcrb6toglSyDZzhN7RbaKAhwFF2BotKd176Mu73Cm1iv7U3kmeLLic1jrH0QNykB7vjD4U1orY/Xy7KFPr6CLd5rJ4WCTjQG3rxPC61Us2F9T9q0TW1yynppu1rwf1eLwIyN5ozzbUL5jI23dzQZpwmkk0mS59v5dE7C7gnl56Ry3QiN9vhbU11x5fcMK+IHZrAytArbzg09rsRnqXuWC5XrDTMA6r2pcBUOxjfx75IvufAGbcA5ocJ9k6+MSM32wLNroSxMujw5Q7OuSkYqcdAOkYwswhckIwhfd3lt4CDgiM3bYhdy+QtQSwMEFAAACAgAAKif68lo4wZtAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tFKqWbKhRXJKSpJ5YopZslGSbqK5kaV5qqWxsXlaWpKFiYVSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAKif63zvICtzAgAAJAUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAKif68lo4wZtAAAAeAAAAAkAJAAAAAAAAAAAAAAAwAIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAAB4AwAAAAA=
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
