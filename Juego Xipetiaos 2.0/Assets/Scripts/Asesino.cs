@@ -52,6 +52,7 @@ public class Asesino : MonoBehaviour
         float min = Mathf.Max(restaX, restaY);
         if (min < 1f)
         {
+
             Debug.Log("Hacer algo");
             return;
         }

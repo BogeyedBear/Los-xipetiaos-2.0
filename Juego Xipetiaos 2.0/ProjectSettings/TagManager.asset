@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Asesino
   - Pieza
+  - point
   layers:
   - Default
   - TransparentFX
@@ -16,9 +17,9 @@ TagManager:
   - muebles
   - pieza
   - Bordes
-  - 
-  - 
-  - 
+  - FOV
+  - BehindFOV
+  - Black
   - 
   - 
   - 

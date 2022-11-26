@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class player : MonoBehaviour
+public class Player : MonoBehaviour
 {
     private Animator animator;
     public Rigidbody2D playerRigidbody2D;
@@ -17,6 +17,8 @@ public class player : MonoBehaviour
     public GameObject sonidoPasos;
 
     public List<RuntimeAnimatorController> animators;
+
+    public FOV fov;
 
     void Awake()
     {
@@ -51,6 +53,8 @@ public class player : MonoBehaviour
         move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         WalkAnimation();
         Run();
+
+        fov.SetOrigin(transform.position);
     }
 
     void TakeDamage(int damage)
