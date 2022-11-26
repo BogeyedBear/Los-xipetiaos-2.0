@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Pathfinding;
+using System;
 
 public class Asesino : MonoBehaviour
 {
 
     public AIPath aiPath;
     private Animator animator;
+    public Transform playerTransform;
+    public Transform holder;
     //public GameObject died;
     //public GameObject player;
     //public GameObject Reset;
@@ -44,6 +47,16 @@ public class Asesino : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float restaX = Mathf.Abs(playerTransform.position.x - holder.transform.position.x);
+        float restaY = Mathf.Abs(playerTransform.position.y - holder.transform.position.y);
+        float min = Mathf.Max(restaX, restaY);
+        if (min < 1f)
+        {
+            Debug.Log("Hacer algo");
+            return;
+        }
+
+
         /**if (hits == 4f)
         {
             //Destroy(collision.gameObject);
