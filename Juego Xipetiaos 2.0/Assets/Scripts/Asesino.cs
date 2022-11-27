@@ -12,6 +12,9 @@ public class Asesino : MonoBehaviour
     private Animator animator;
     public Transform playerTransform;
     public Transform holder;
+    public AIDestinationSetter ai;
+    [SerializeField] private List<Transform> listPositionsToMove;
+    private System.Random creadorNumeros = new System.Random();
     //public GameObject died;
     //public GameObject player;
     //public GameObject Reset;
@@ -21,6 +24,35 @@ public class Asesino : MonoBehaviour
     void Awake()
     {
         animator = GetComponent<Animator>();
+    }
+
+    public void Patrullar()
+    {
+        if(Mathf.Abs(Vector2.Distance(playerTransform.position, holder.position))>5)
+        {
+            ai.target = null;
+            GenerarRuta();
+        }
+        else
+        {
+            ai.target = playerTransform;
+        }
+    }
+
+    private void GenerarRuta()
+    {
+        int posicion = this.creadorNumeros.Next(0, 4);
+        ai.target = listPositionsToMove[posicion];
+        Debug.Log(posicion);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("point"))
+        {
+            GenerarRuta();
+            Debug.Log("XD");
+        }
     }
 
     /**private void OnCollisionEnter2D(Collision2D collision)
@@ -47,14 +79,18 @@ public class Asesino : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Patrullar();
         float restaX = Mathf.Abs(playerTransform.position.x - holder.transform.position.x);
         float restaY = Mathf.Abs(playerTransform.position.y - holder.transform.position.y);
-        float min = Mathf.Max(restaX, restaY);
+        float min = Mathf.Min(restaX, restaY);
         if (min < 1f)
         {
-
+            animator.SetBool("atacando", true);
             Debug.Log("Hacer algo");
-            return;
+        } 
+        else
+        {
+            animator.SetBool("atacando", false);
         }
 
 
