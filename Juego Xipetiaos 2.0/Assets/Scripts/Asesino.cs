@@ -16,6 +16,7 @@ public class Asesino : MonoBehaviour
     [SerializeField] private List<Transform> listPositionsToMove;
     private System.Random creadorNumeros = new System.Random();
     [SerializeField] private int posicion;
+    public int rangoDeVision;
     //public GameObject died;
     //public GameObject player;
     //public GameObject Reset;
@@ -29,9 +30,8 @@ public class Asesino : MonoBehaviour
 
     public void Patrullar()
     {
-        if(Mathf.Abs(Vector2.Distance(playerTransform.position, holder.position))>5)
+        if(Mathf.Abs(Vector2.Distance(playerTransform.position, holder.position))>rangoDeVision)
         {
-            ai.target = null;
             ai.target = listPositionsToMove[posicion];
         }
         else
@@ -40,16 +40,19 @@ public class Asesino : MonoBehaviour
         }
     }
 
-    private int OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("point"))
         {
-            posicion = this.creadorNumeros.Next(0, 4);
-            Debug.Log("XD");
+            int aux = this.creadorNumeros.Next(0, listPositionsToMove.Count);
+            while(aux == this.posicion)
+            {
+                aux = this.creadorNumeros.Next(0, listPositionsToMove.Count);
+            }
+            posicion = aux;
         }
-        return posicion;
     }
-
+    
     /**private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
