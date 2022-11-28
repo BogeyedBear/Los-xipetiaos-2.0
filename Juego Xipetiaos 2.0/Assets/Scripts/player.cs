@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     private float multiplier = 1;
     public int maxHealth = 100;
     public int currentHealth;
-    public QuitaVida movimientoNull;
+    //public QuitaVida movimientoNull;
     public PauseMenu menuNull;
 
     public HealthBar healthBar;
