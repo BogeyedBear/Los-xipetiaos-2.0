@@ -11,6 +11,7 @@ public class QuitaVida : MonoBehaviour
     public GameObject Negro;
     public GameObject Backmenu;
     public float hits = 0f;
+    public bool animacionNull = true;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +51,7 @@ public class QuitaVida : MonoBehaviour
             Negro.gameObject.SetActive(true);
             died.gameObject.SetActive(true);
             Backmenu.gameObject.SetActive(true);
+            animacionNull = false;
             Debug.Log("¡¡¡YOU DIED!!!");
         }
     }

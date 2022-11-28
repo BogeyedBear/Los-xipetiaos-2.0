@@ -5044,6 +5044,8 @@ MonoBehaviour:
   speed: 100
   maxHealth: 100
   currentHealth: 0
+  movimientoNull: {fileID: 860479809}
+  menuNull: {fileID: 892438199}
   healthBar: {fileID: 1529485033}
   sonidoPasos: {fileID: 589634631}
   animators:
@@ -5117,6 +5119,7 @@ MonoBehaviour:
   Negro: {fileID: 1678890263}
   Backmenu: {fileID: 279351437}
   hits: 0
+  animacionNull: 1
 --- !u!1 &865290766
 GameObject:
   m_ObjectHideFlags: 0
@@ -5506,6 +5509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1511456894}
+  animacionNull: 1
 --- !u!1 &893316842
 GameObject:
   m_ObjectHideFlags: 0

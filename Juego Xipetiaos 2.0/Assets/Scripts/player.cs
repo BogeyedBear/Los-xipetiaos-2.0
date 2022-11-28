@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     private float multiplier = 1;
     public int maxHealth = 100;
     public int currentHealth;
+    public QuitaVida movimientoNull;
+    public PauseMenu menuNull;
 
     public HealthBar healthBar;
 
@@ -51,8 +53,12 @@ public class Player : MonoBehaviour
     void Update()
     {
         move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        WalkAnimation();
-        Run();
+        if (menuNull.animacionNull)
+        {
+            WalkAnimation();
+            Run();
+        }
+
 
         fov.SetOrigin(transform.position);
     }
