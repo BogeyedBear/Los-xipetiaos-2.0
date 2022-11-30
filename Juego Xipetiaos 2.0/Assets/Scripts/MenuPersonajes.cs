@@ -64,6 +64,22 @@ public class MenuPersonajes : MonoBehaviour
     public void IniciarJuego()
     {
         PlayerPrefs.SetInt("Skin", index);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
+        // Llamas la corutina
+        StartCoroutine(ChangeScene());
+    }
+
+    // Esta es tu corutine
+    IEnumerator ChangeScene()
+    {
+        // Emitir el sonido
+        // XD
+        // Hacer que se espere la ejecución del sonido}
+        yield return new WaitForSeconds(1f);
+
+        // Cambias de escena
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
     }
 }
