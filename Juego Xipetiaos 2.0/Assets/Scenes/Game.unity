@@ -15235,6 +15235,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   menuNull: {fileID: 892438199}
+  movimientoNull: {fileID: 2009458828}
   healthBar: {fileID: 1529485033}
   sonidoPasos: {fileID: 589634631}
   animators:
@@ -59764,6 +59765,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainPanel: {fileID: 1828378274}
   panel: {fileID: 808778440}
+  movimientoNull: {fileID: 2009458828}
 --- !u!1 &1831073635
 GameObject:
   m_ObjectHideFlags: 0
@@ -65395,6 +65397,7 @@ MonoBehaviour:
   task: {fileID: 808778440}
   mainPanel: {fileID: 1828378274}
   completao: {fileID: 1828378279}
+  movimiento: 1
 --- !u!1 &2018303192
 GameObject:
   m_ObjectHideFlags: 0
