@@ -17,6 +17,8 @@ public class Asesino : MonoBehaviour
     private System.Random creadorNumeros = new System.Random();
     [SerializeField] private int posicion;
     public int rangoDeVision;
+    private float horizontal;
+    private float vertical;
     //public GameObject died;
     //public GameObject player;
     //public GameObject Reset;
@@ -52,6 +54,21 @@ public class Asesino : MonoBehaviour
             posicion = aux;
         }
     }
+
+    private void AttackDown()
+    {
+        float restaX = Mathf.Abs(playerTransform.position.x - holder.transform.position.x);
+        float restaY = Mathf.Abs(playerTransform.position.y - holder.transform.position.y);
+        float min = Mathf.Min(restaX, restaY);
+        if (min < 0.5f)
+        {
+            animator.SetBool("AtaqueAbajo", true);
+        }
+        else
+        {
+            animator.SetBool("AtaqueAbajo", false);
+        }
+    }
     
     /**private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -78,19 +95,6 @@ public class Asesino : MonoBehaviour
     void Update()
     {
         Patrullar();
-        float restaX = Mathf.Abs(playerTransform.position.x - holder.transform.position.x);
-        float restaY = Mathf.Abs(playerTransform.position.y - holder.transform.position.y);
-        float min = Mathf.Min(restaX, restaY);
-        if (min < 1f)
-        {
-            animator.SetBool("atacando", true);
-            Debug.Log("Hacer algo");
-        } 
-        else
-        {
-            animator.SetBool("atacando", false);
-        }
-
 
         /**if (hits == 4f)
         {
@@ -102,36 +106,131 @@ public class Asesino : MonoBehaviour
         }**/
         if (aiPath.desiredVelocity.x >= 0.01f)
         {
+            horizontal = 1f;
+            vertical = 0f;
+            Animacion();
+            float restaX = Mathf.Abs(playerTransform.position.x - holder.transform.position.x);
+            float restaY = Mathf.Abs(playerTransform.position.y - holder.transform.position.y);
+            float min = Mathf.Min(restaX, restaY);
+            if (min < 0.3f)
+            {
+                animator.SetBool("Atacando", true);
+
+            }
+            if (min > 0.3f)
+            {
+                animator.SetBool("Atacando", false);
+            }
             //transform.localScale = new Vector3(1f, 1f, 1f);
-            animator.SetBool("arribaE", false);
+            /**animator.SetBool("arribaE", false);
             animator.SetBool("izquierdaE", false);
             animator.SetBool("abajoE", false);
-            animator.SetBool("derechaE", true);
+            animator.SetBool("derechaE", true);**/
+            //Opcion de movimiento
+            /**if (aiPath.desiredVelocity.y >= 0.01f)
+            {
+                //transform.localScale = new Vector3(1f, 1f, 1f);
+                animator.SetBool("arribaE", true);
+                animator.SetBool("izquierdaE", false);
+                animator.SetBool("abajoE", false);
+                animator.SetBool("derechaE", false);
 
+            }
+            else if (aiPath.desiredVelocity.y <= -0.01f)
+            {
+                //transform.localScale = new Vector3(1f, 1f, 1f);
+                animator.SetBool("arribaE", false);
+                animator.SetBool("izquierdaE", false);
+                animator.SetBool("abajoE", true);
+                animator.SetBool("derechaE", false);
+            }**/
         }
         else if (aiPath.desiredVelocity.x <= -0.01f)
         {
+            horizontal = -1f;
+            vertical = 0f;
+            Animacion();
+            float restaX = Mathf.Abs(playerTransform.position.x - holder.transform.position.x);
+            float restaY = Mathf.Abs(playerTransform.position.y - holder.transform.position.y);
+            float min = Mathf.Min(restaX, restaY);
+            if (min < 0.3f)
+            {
+                animator.SetBool("Atacando", true);
+
+            }
+            if (min > 0.3f)
+            {
+                animator.SetBool("Atacando", false);
+            }
             //transform.localScale = new Vector3(1f, 1f, 1f);
-            animator.SetBool("arribaE", false);
+            /**animator.SetBool("arribaE", false);
             animator.SetBool("izquierdaE", true);
             animator.SetBool("abajoE", false);
-            animator.SetBool("derechaE", false);
+            animator.SetBool("derechaE", false);**/
+            //Opcion de movimieno
+            /**if (aiPath.desiredVelocity.y >= 0.01f)
+            {
+                //transform.localScale = new Vector3(1f, 1f, 1f);
+                animator.SetBool("arribaE", true);
+                animator.SetBool("izquierdaE", false);
+                animator.SetBool("abajoE", false);
+                animator.SetBool("derechaE", false);
+            }
+            else if (aiPath.desiredVelocity.y <= -0.01f)
+            {
+                //transform.localScale = new Vector3(1f, 1f, 1f);
+                animator.SetBool("arribaE", false);
+                animator.SetBool("izquierdaE", false);
+                animator.SetBool("abajoE", true);
+                animator.SetBool("derechaE", false);
+            }**/
         }
         else if (aiPath.desiredVelocity.y >= 0.01f)
         {
+            horizontal = 0f;
+            vertical = 1f;
+            Animacion();
+            float restaX = Mathf.Abs(playerTransform.position.x - holder.transform.position.x);
+            float restaY = Mathf.Abs(playerTransform.position.y - holder.transform.position.y);
+            float min = Mathf.Min(restaX, restaY);
+            if (min < 0.3f)
+            {
+                animator.SetBool("Atacando", true);
+
+            }
+            if (min > 0.3f)
+            {
+                animator.SetBool("Atacando", false);
+            }
             //transform.localScale = new Vector3(1f, 1f, 1f);
-            animator.SetBool("arribaE", true);
+            /**animator.SetBool("arribaE", true);
             animator.SetBool("izquierdaE", false);
             animator.SetBool("abajoE", false);
-            animator.SetBool("derechaE", false);
+            animator.SetBool("derechaE", false);**/
         }
         else if (aiPath.desiredVelocity.y <= -0.01f)
         {
+            horizontal = 0f;
+            vertical = -1f;
+            Animacion();
+            float restaX = Mathf.Abs(playerTransform.position.x - holder.transform.position.x);
+            float restaY = Mathf.Abs(playerTransform.position.y - holder.transform.position.y);
+            float min = Mathf.Min(restaX, restaY);
+            if (min < 0.3f)
+            {
+                animator.SetBool("Atacando", true);
+
+            }
+            if (min > 0.3f)
+            {
+                animator.SetBool("Atacando", false);
+            }
             //transform.localScale = new Vector3(1f, 1f, 1f);
-            animator.SetBool("arribaE", false);
+            /**animator.SetBool("arribaE", false);
             animator.SetBool("izquierdaE", false);
             animator.SetBool("abajoE", true);
-            animator.SetBool("derechaE", false);
+            animator.SetBool("derechaE", false);**/
+            //AttackDown();
         }
         //abajo();
         //arriba();
@@ -153,6 +252,12 @@ public class Asesino : MonoBehaviour
             animator.SetBool("abajoE", true);
             animator.SetBool("derechaE", false);
         }**/
+    }
+
+    private void Animacion()
+    {
+        animator.SetFloat("Horizontal", horizontal);
+        animator.SetFloat("Vertical", vertical);
     }
 
     private void abajo()
