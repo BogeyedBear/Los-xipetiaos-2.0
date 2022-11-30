@@ -67,11 +67,11 @@ public class MenuPersonajes : MonoBehaviour
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         
         // Llamas la corutina
-        StartCoroutine(ChangeScene());
+        StartCoroutine(NextScene());
     }
 
     // Esta es tu corutine
-    IEnumerator ChangeScene()
+    IEnumerator NextScene()
     {
         // Emitir el sonido
         // XD
@@ -83,9 +83,21 @@ public class MenuPersonajes : MonoBehaviour
 
     }
 
+    IEnumerator BackScene()
+    {
+        // Emitir el sonido
+        // XD
+        // Hacer que se espere la ejecución del sonido}
+        yield return new WaitForSeconds(1f);
+
+        // Cambias de escena
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+
+    }
+
     public void BackGame()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        StartCoroutine(BackScene());
     }
 }

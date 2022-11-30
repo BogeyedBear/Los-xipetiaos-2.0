@@ -17,6 +17,19 @@ public class PauseMenu : MonoBehaviour
             animacionNull = false;
         }
     }
+
+    IEnumerator ResetScene()
+    {
+        // Emitir el sonido
+        // XD
+        // Hacer que se espere la ejecución del sonido}
+        yield return new WaitForSeconds(1f);
+
+        // Cambias de escena
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+    }
+
     public void ButtonBack()
     {
         Time.timeScale = 1f;
@@ -26,7 +39,7 @@ public class PauseMenu : MonoBehaviour
     public void ButtonReset()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        StartCoroutine(ResetScene());
     }
     public void ButtonQuit()
     {

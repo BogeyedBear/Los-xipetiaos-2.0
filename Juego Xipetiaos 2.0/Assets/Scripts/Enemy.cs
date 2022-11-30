@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     // Variable to reference the state Machine
-    [SerializeField] private StateMachine currentStateEnemy;
+    //[SerializeField] private StateMachine currentStateEnemy;
 
     // Variable to reference the player
     private Player player;
@@ -34,7 +34,7 @@ public class Enemy : MonoBehaviour
         player = FindObjectOfType<Player>();
 
         // Changing the state of the StateMachine
-        currentStateEnemy = StateMachine.idle;
+        //currentStateEnemy = StateMachine.idle;
     }
 
     private void Update()
@@ -66,7 +66,7 @@ public class Enemy : MonoBehaviour
         if (distance < _visionRate)
         {
             target = player.transform.position;
-            currentStateEnemy = StateMachine.follow;
+            //currentStateEnemy = StateMachine.follow;
         }
         else
         {
