@@ -6,6 +6,7 @@ public class BackTask : MonoBehaviour
 {
     public GameObject mainPanel;
     public GameObject panel;
+    public CajaFuerte movimientoNull;
 
     // Start is called before the first frame update
     void Start()
@@ -23,5 +24,7 @@ public class BackTask : MonoBehaviour
     {
         this.mainPanel.SetActive(false);
         this.panel.SetActive(false);
+        Time.timeScale = 1f;
+        movimientoNull.movimiento = true;
     }
 }

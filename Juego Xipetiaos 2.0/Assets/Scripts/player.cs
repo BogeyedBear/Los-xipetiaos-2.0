@@ -14,6 +14,8 @@ public class Player : MonoBehaviour
     //public QuitaVida movimientoNull;
     public PauseMenu menuNull;
 
+    public CajaFuerte movimientoNull;
+
     public HealthBar healthBar;
 
     public GameObject sonidoPasos;
@@ -53,7 +55,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        if (menuNull.animacionNull)
+        if ((menuNull.animacionNull) || (movimientoNull.movimiento))
         {
             WalkAnimation();
             Run();

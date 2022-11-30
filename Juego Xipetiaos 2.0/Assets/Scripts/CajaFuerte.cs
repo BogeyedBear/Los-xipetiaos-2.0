@@ -10,6 +10,7 @@ public class CajaFuerte : MonoBehaviour
     public GameObject task;
     public GameObject mainPanel;
     public PanelTask completao;
+    public bool movimiento = true;
     //bool playerClose;
     // Start is called before the first frame update
 
@@ -64,6 +65,8 @@ public class CajaFuerte : MonoBehaviour
             {
                 this.task.SetActive(true);
                 this.mainPanel.SetActive(true);
+                Time.timeScale = 0f;
+                movimiento = false;
             }
         }
         else
