@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5c4cdc1acba763b4c9f0e53aed259686
+guid: 1add3187a19297e42a1a68ee0aa5504e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: muble_doblao 1_0
+      name: sillon2 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 51
-        width: 32
-        height: 45
+        y: 72
+        width: 64
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 125132d24cd67c548906d6a18ef8cfc1
-      internalID: -1290974207
+      spriteID: 20c58d2bb81f9fd498ae428c222b95a7
+      internalID: -42275738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: muble_doblao 1_1
+      name: sillon2 1_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 32
-        height: 19
+        y: 30
+        width: 64
+        height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0abc199ab7fa73846bb56ac122ca6f3e
-      internalID: -161378249
+      spriteID: 175f16de1680a39439217f6cbc7a9357
+      internalID: -1393806728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: muble_doblao 1_2
+      name: sillon2 1_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,8 +160,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fd91491d9e3bb346b9dcd6fbd1d5180
-      internalID: -1494582942
+      spriteID: c21c278a4c2dc9646bc276d95764ba4d
+      internalID: 1305661475
       vertices: []
       indices: 
       edges: []
@@ -177,9 +177,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      muble_doblao 1_1: -161378249
-      muble_doblao 1_2: -1494582942
-      muble_doblao 1_0: -1290974207
+      sillon2 1_2: 1305661475
+      sillon2 1_0: -42275738
+      sillon2 1_1: -1393806728
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
