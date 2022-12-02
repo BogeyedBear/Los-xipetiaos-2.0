@@ -9,6 +9,7 @@ public class Pelota : MonoBehaviour
     Vector2 posicion;
     public AudioSource fuente;
     public AudioClip clip;
+    public AudioClip clip2;
     public GameObject pieza;
     public GameObject balon;
     public GameObject minijuego;
@@ -39,6 +40,8 @@ public class Pelota : MonoBehaviour
                 this.balon.SetActive(false);
                 this.minijuego.SetActive(false);
                 this.minijuegowin.SetActive(true);
+                fuente.clip = clip2;
+                fuente.Play();
 
             }
         }
