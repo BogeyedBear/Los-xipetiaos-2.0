@@ -10,7 +10,7 @@ public class PanelTask : MonoBehaviour
     public int randNumber;
     public bool abierto;
     public GameObject pieza;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -57,7 +57,6 @@ public class PanelTask : MonoBehaviour
             Destroy(gameObject, 1.0f);
             abierto = true;
             this.pieza.SetActive(true);
-
         }
         else
         {
