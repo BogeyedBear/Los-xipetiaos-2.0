@@ -7,6 +7,8 @@ TagManager:
   - Asesino
   - Pieza
   - point
+  - gool
+  - maniqui
   layers:
   - Default
   - TransparentFX
@@ -23,7 +25,7 @@ TagManager:
   - arriba
   - futbol
   - bordes
-  - 
+  - noentrar
   - 
   - 
   - 

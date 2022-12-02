@@ -5,24 +5,23 @@ using UnityEngine;
 public class Pelota : MonoBehaviour
 {
     public int puntos = 0;
-    private Rigidbody2D pelotaRigidbody2D;
+    [SerializeField] Rigidbody2D pelotaRigidbody2D;
     Vector2 posicion;
     public AudioSource fuente;
     public AudioClip clip;
     public GameObject pieza;
     public GameObject balon;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        pelotaRigidbody2D = GetComponent<Rigidbody2D>();
-        posicion = new Vector2 (pelotaRigidbody2D.position.x, pelotaRigidbody2D.position.y);
+        posicion = new Vector2(pelotaRigidbody2D.position.x, pelotaRigidbody2D.position.y);
         fuente.clip = clip;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -45,7 +44,7 @@ public class Pelota : MonoBehaviour
         // Emitir el sonido
         // XD
         // Hacer que se espere la ejecución del sonido}
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
         // Cambias de escena
         pelotaRigidbody2D.position = posicion;
