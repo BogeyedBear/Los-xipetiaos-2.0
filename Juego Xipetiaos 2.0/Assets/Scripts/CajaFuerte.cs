@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CajaFuerte : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class CajaFuerte : MonoBehaviour
     public GameObject mainPanel;
     public PanelTask completao;
     public bool movimiento = true;
+    public GameObject minijuego;
+    public GameObject minijuegowin;
     //bool playerClose;
     // Start is called before the first frame update
 
@@ -65,6 +68,8 @@ public class CajaFuerte : MonoBehaviour
             {
                 this.task.SetActive(true);
                 this.mainPanel.SetActive(true);
+                this.minijuego.SetActive(false);
+                this.minijuegowin.SetActive(true);
                 Time.timeScale = 0f;
                 movimiento = false;
             }

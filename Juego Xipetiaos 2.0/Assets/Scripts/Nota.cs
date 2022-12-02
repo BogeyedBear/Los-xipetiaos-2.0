@@ -36,11 +36,13 @@ public class Nota : MonoBehaviour
             {
                 this.panel.SetActive(true);
                 this.mainPanel.SetActive(true);
+                Time.timeScale = 0f;
             }
             else
             {
                 this.panel.SetActive(false);
                 this.mainPanel.SetActive(false);
+                Time.timeScale = 1f;
             }
         }
         else

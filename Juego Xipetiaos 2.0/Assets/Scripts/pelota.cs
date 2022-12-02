@@ -11,6 +11,8 @@ public class Pelota : MonoBehaviour
     public AudioClip clip;
     public GameObject pieza;
     public GameObject balon;
+    public GameObject minijuego;
+    public GameObject minijuegowin;
     // Start is called before the first frame update
     void Awake()
     {
@@ -35,6 +37,9 @@ public class Pelota : MonoBehaviour
             {
                 this.pieza.SetActive(true);
                 this.balon.SetActive(false);
+                this.minijuego.SetActive(false);
+                this.minijuegowin.SetActive(true);
+
             }
         }
     }
