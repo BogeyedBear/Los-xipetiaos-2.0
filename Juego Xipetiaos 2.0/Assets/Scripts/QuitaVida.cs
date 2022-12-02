@@ -13,11 +13,13 @@ public class QuitaVida : MonoBehaviour
     public float hits = 0f;
     public bool animacionNull = true;
     public AudioSource fuente;
+    public AudioSource fuente2;
     public AudioClip clip;
+    public AudioClip clip2;
 
     void Awake()
     {
-        fuente.clip = clip;
+        fuente.clip = clip2;
     }
 
     // Start is called before the first frame update
@@ -36,6 +38,7 @@ public class QuitaVida : MonoBehaviour
             died.gameObject.SetActive(true);
             Debug.Log("¡¡¡YOU DIED!!!");**/
             hits = hits + 1f;
+            fuente.Play();
         }
         /**if (hits == 4f)
         {
@@ -59,6 +62,7 @@ public class QuitaVida : MonoBehaviour
             died.gameObject.SetActive(true);
             Backmenu.gameObject.SetActive(true);
             animacionNull = false;
+            fuente2.clip = clip;
             fuente.Play();
             Debug.Log("¡¡¡YOU DIED!!!");
         }
