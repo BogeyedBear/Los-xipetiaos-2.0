@@ -19,6 +19,8 @@ public class Asesino : MonoBehaviour
     public int rangoDeVision;
     private float horizontal;
     private float vertical;
+    public AudioSource fuente;
+    public AudioClip clip;
     //public GameObject died;
     //public GameObject player;
     //public GameObject Reset;
@@ -59,8 +61,7 @@ public class Asesino : MonoBehaviour
     {
         float restaX = Mathf.Abs(playerTransform.position.x - holder.transform.position.x);
         float restaY = Mathf.Abs(playerTransform.position.y - holder.transform.position.y);
-        float min = Mathf.Min(restaX, restaY);
-        if (min < 0.5f)
+        if (restaX < 1f && restaY < 1f)
         {
             animator.SetBool("AtaqueAbajo", true);
         }
