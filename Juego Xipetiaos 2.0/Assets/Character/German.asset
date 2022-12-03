@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd2e7549b25980943921524bac1fec97, type: 3}
-  m_Name: Female
+  m_Name: German
   m_EditorClassIdentifier: 
-  personajeJugable: {fileID: 22100000, guid: f49d5edb7c3023d40ace635948b6f9db, type: 2}
-  imagen: {fileID: 21300000, guid: 883d47698b24cce408abe299af2ae2fd, type: 3}
-  nombre: Lili
+  personajeJugable: {fileID: 22100000, guid: a5e781d04a03d3f418467564c83f0144, type: 2}
+  imagen: {fileID: 21300000, guid: 52dfdf83580fd1a45bfac3c2da01e7a0, type: 3}
+  nombre: German

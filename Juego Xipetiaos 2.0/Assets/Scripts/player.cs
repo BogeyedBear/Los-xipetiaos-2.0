@@ -57,7 +57,7 @@ public class Player : MonoBehaviour
         move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         if ((menuNull.animacionNull) || (movimientoNull.movimiento))
         {
-            WalkAnimation();
+            Walk();
             Run();
         }
 
@@ -73,6 +73,40 @@ public class Player : MonoBehaviour
     }
 
     public void Run()
+    {
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            animator.SetBool("Correr", true);
+            animator.SetFloat("Horizontal", horizontal);
+            animator.SetFloat("Vertical", vertical);
+            multiplier = 1.5f;
+        }
+        else
+        {
+            animator.SetBool("Correr", false);
+            multiplier = 1f;
+        }
+    }
+
+    public void Walk()
+    {
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+        animator.SetFloat("Horizontal", horizontal);
+        animator.SetFloat("Vertical", vertical);
+        if((Input.GetAxisRaw("Horizontal") != 0f) || (Input.GetAxisRaw("Vertical") != 0f))
+        {
+            sonidoPasos.gameObject.SetActive(true);
+        }
+        else
+        {
+            sonidoPasos.gameObject.SetActive(false);
+        }
+    }
+
+    /**public void Run()
     {
         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift))
         {
@@ -122,9 +156,9 @@ public class Player : MonoBehaviour
             animator.SetBool("correrDerecha", false);
             multiplier = 1;
         }
-    }
+    }**/
 
-    public void WalkAnimation()
+    /**public void WalkAnimation()
     {
         if (Input.GetKey(KeyCode.A))
         {
@@ -166,5 +200,5 @@ public class Player : MonoBehaviour
             animator.SetBool("caminarDerecha", false);
             sonidoPasos.gameObject.SetActive(false);
         }
-    }
+    }**/
 }

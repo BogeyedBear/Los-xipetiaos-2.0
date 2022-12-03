@@ -1576,6 +1576,10 @@ MonoBehaviour:
   personajes:
   - {fileID: 11400000, guid: 5523da24a716e4b458a8782ce760a186, type: 2}
   - {fileID: 11400000, guid: 08e2fd7eea050cf438a9ba1cbe96746d, type: 2}
+  - {fileID: 11400000, guid: 51b3a07790345d04082f7c8d94bc911e, type: 2}
+  - {fileID: 11400000, guid: 1daf79cf16130a140af70f4644a79c36, type: 2}
+  - {fileID: 11400000, guid: 5d3b3048874545d479e15a1398b3f65a, type: 2}
+  - {fileID: 11400000, guid: 943c3a5075b2e9e40a4357e04ff50e17, type: 2}
 --- !u!4 &1618797539
 Transform:
   m_ObjectHideFlags: 0
