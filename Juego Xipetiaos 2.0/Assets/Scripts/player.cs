@@ -58,7 +58,6 @@ public class Player : MonoBehaviour
         if ((menuNull.animacionNull) || (movimientoNull.movimiento))
         {
             Walk();
-            Run();
         }
 
 
@@ -99,10 +98,13 @@ public class Player : MonoBehaviour
         if((Input.GetAxisRaw("Horizontal") != 0f) || (Input.GetAxisRaw("Vertical") != 0f))
         {
             sonidoPasos.gameObject.SetActive(true);
+            Run();
         }
         else
         {
             sonidoPasos.gameObject.SetActive(false);
+            animator.SetBool("Correr", false);
+            multiplier = 1f;
         }
     }
 

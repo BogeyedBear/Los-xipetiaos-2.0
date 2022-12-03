@@ -257,7 +257,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: OPTIONS
+  m_text: Opciones
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e610b80c32b4d74897a13d72866aabb, type: 2}
   m_sharedMaterial: {fileID: 5193942002900319431, guid: 2e610b80c32b4d74897a13d72866aabb, type: 2}
@@ -290,7 +290,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -671,7 +671,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PLAY
+  m_text: Jugar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e610b80c32b4d74897a13d72866aabb, type: 2}
   m_sharedMaterial: {fileID: 5193942002900319431, guid: 2e610b80c32b4d74897a13d72866aabb, type: 2}
@@ -704,7 +704,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
   m_fontSizeMax: 0
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1122,7 +1122,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TUTORIAL
+  m_text: Tutorial
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e610b80c32b4d74897a13d72866aabb, type: 2}
   m_sharedMaterial: {fileID: 5193942002900319431, guid: 2e610b80c32b4d74897a13d72866aabb, type: 2}
@@ -1155,7 +1155,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1656,7 +1656,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: QUIT
+  m_text: Salir
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e610b80c32b4d74897a13d72866aabb, type: 2}
   m_sharedMaterial: {fileID: 5193942002900319431, guid: 2e610b80c32b4d74897a13d72866aabb, type: 2}
@@ -1689,7 +1689,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -2076,6 +2076,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1959266823}
     m_Modifications:
+    - target: {fileID: 4815352979018233655, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
+      propertyPath: m_text
+      value: Atras
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815352979018233655, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e610b80c32b4d74897a13d72866aabb, type: 2}
+    - target: {fileID: 4815352979018233655, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815352979018233655, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4815352979019440784, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2175,6 +2191,18 @@ PrefabInstance:
     - target: {fileID: 4815352980576632568, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815352980576632570, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
+      propertyPath: m_text
+      value: Volumen efectos
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815352980576632570, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e610b80c32b4d74897a13d72866aabb, type: 2}
+    - target: {fileID: 4815352980576632570, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4815352980995491412, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
       propertyPath: m_Name
@@ -2294,11 +2322,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4815352981032724099, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 201
+      value: 188
       objectReference: {fileID: 0}
     - target: {fileID: 4815352981032724099, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -80
+      value: -102
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815352981032724100, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
+      propertyPath: m_text
+      value: Volumen musica
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815352981032724100, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
+      propertyPath: m_fontSize
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815352981032724100, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
+      propertyPath: m_margin.z
+      value: -14.44191
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815352981032724100, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e610b80c32b4d74897a13d72866aabb, type: 2}
+    - target: {fileID: 4815352981032724100, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815352981032724100, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 5193942002900319431, guid: 2e610b80c32b4d74897a13d72866aabb, type: 2}
+    - target: {fileID: 4815352981032724100, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa89c2e13b280c9419c0954b531ecab3, type: 3}
