@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial.unity
     guid: 44abe3a7b9bb641488b8dd646103b75f
   - enabled: 1
+    path: Assets/Scenes/Cinematica.unity
+    guid: cb62af72f9ead9749b9630571372b01c
+  - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: fd824658e3a31d449a16989487fd732f
   - enabled: 1

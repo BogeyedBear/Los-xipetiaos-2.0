@@ -25,6 +25,9 @@ public class VictoriaPanel : MonoBehaviour
     public void ButtonSiguiente()
     {
         Time.timeScale = 1f;
+        fuente.Play();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
     }
+
 }

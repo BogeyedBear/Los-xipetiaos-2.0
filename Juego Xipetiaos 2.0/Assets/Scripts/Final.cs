@@ -20,7 +20,7 @@ public class Final : MonoBehaviour
     public void ButtonQuit()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 4);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 5);
     }
 
     IEnumerator Quit()
@@ -31,7 +31,7 @@ public class Final : MonoBehaviour
         yield return new WaitForSeconds(114f);
 
         // Cambias de escena
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 4);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 5);
 
     }
 }
