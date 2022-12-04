@@ -19,7 +19,7 @@ public class Piezas : MonoBehaviour
         {
             Destroy(collision.gameObject);
             parts = parts + 1f;
-            Debug.Log("!!!Has encontrado una pieza¡¡¡(" + parts + "/5)");
+            Debug.Log("!!!Has encontrado una pieza¡¡¡(" + parts + "/6)");
         }
     }
 
