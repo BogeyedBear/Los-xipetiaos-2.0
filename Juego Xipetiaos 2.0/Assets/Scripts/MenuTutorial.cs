@@ -7,13 +7,16 @@ public class MenuTutorial : MonoBehaviour
 {
     public GameObject pauseMenu;
     private GameObject pauseButton;
+    public GameObject controles;
     public bool animacionNull = true;
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Time.timeScale = 0f;
             this.pauseMenu.SetActive(true);
+            this.controles.SetActive(false);
             animacionNull = false;
         }
     }
@@ -33,6 +36,7 @@ public class MenuTutorial : MonoBehaviour
     {
         Time.timeScale = 1f;
         this.pauseMenu.SetActive(false);
+        this.controles.SetActive(true);
         animacionNull = true;
     }
     public void ButtonQuit()
