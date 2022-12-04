@@ -12,6 +12,13 @@ public class Auto : MonoBehaviour
     public Piezas partes;
     private bool sonido = true;
     public GameObject win;
+    public GameObject tachada1;
+    public GameObject tachada2;
+    public GameObject tachada3;
+    public GameObject tachada4;
+    public GameObject tachada5;
+    public GameObject desaparecer;
+    public GameObject objetivo;
 
     void Awake()
     {
@@ -28,6 +35,7 @@ public class Auto : MonoBehaviour
     void Update()
     {
         Cerca();
+        NuevaTarea();
     }
     private void Cerca()
     {
@@ -55,6 +63,20 @@ public class Auto : MonoBehaviour
         else
         {
             animator.SetBool("cerca", false);
+        }
+    }
+
+    private void NuevaTarea()
+    {
+        if (partes.parts == 6f)
+        {
+            this.tachada1.SetActive(false);
+            this.tachada2.SetActive(false);
+            this.tachada3.SetActive(false);
+            this.tachada4.SetActive(false);
+            this.tachada5.SetActive(false);
+            this.desaparecer.SetActive(false);
+            this.objetivo.SetActive(true);
         }
     }
 

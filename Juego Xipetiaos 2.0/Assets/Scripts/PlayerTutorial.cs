@@ -6,7 +6,7 @@ public class PlayerTutorial : MonoBehaviour
 {
     private Animator animator;
     public Rigidbody2D playerRigidbody2D;
-    public PauseMenu menuNull;
+    public MenuTutorial menuNull;
     Vector2 move;
     public List<RuntimeAnimatorController> animators;
     public float speed = 150;
