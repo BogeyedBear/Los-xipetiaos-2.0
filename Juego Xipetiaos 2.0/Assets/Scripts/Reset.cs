@@ -14,7 +14,7 @@ public class Reset : MonoBehaviour
     public void QuitGame()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 4);
     }
 
     // Update is called once per frame
