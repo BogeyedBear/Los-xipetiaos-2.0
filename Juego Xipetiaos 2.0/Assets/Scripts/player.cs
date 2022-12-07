@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        if ((menuNull.animacionNull) || (movimientoNull.movimiento))
+        if (menuNull.animacionNull)
         {
             Walk();
         }
